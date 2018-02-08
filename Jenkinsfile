@@ -1,4 +1,4 @@
-pipelie {
+pipeline {
 	
 	stages {
 		         stage ('clean stage') {
