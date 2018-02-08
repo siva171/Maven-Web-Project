@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Comple Stage starts...'
 				withMaven(maven : 'maven_3_5_2'){
-				 sh 'mvn clean compile'
+				 bat 'mvn clean compile'
 				echo 'Comple Stage ends...'
 				}
             }
@@ -15,7 +15,7 @@ pipeline {
             steps {
                 echo 'Testing Stage starts...'
 				withMaven(maven : 'maven_3_5_2'){
-				 sh 'mvn test'
+				 bat 'mvn test'
 				echo 'Testing Stage ends...'
 				}
             }
@@ -24,7 +24,7 @@ pipeline {
             steps {
                 echo 'Install Stage starts...'
 				withMaven(maven : 'maven_3_5_2'){
-				 sh 'mvn install'
+				 bat 'mvn install'
 				echo 'Install Stage ends...'
 				}
             }
@@ -33,7 +33,7 @@ pipeline {
             steps {
                 echo 'Install Stage starts...'
 				withMaven(maven : 'maven_3_5_2'){
-				 sh 'mvn deploy'
+				 bat 'mvn deploy'
 				echo 'Deploy Stage ends...'
 				}
             }
@@ -41,7 +41,7 @@ pipeline {
         stage('SonarQube Scanner Stage') {
             steps {
                 echo 'Deploymnet Stage starts...'
-				 sh 'mvn sonar:sonar'
+				 bat 'mvn sonar:sonar'
 				echo 'Deploymnet Stage ends...'
             }
         }
