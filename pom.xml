@@ -81,6 +81,15 @@
 		</dependency>
   </dependencies>
 	
+<distributionManagement>
+
+     <snapshotRepository>
+         <id>deployment</id>
+         <name>Nanu snapshot </name>
+         <url>http://localhost:8081/repository/siva.chinnu171/</url>
+     </snapshotRepository>
+
+</distributionManagement>
 
   <build>
     <plugins>
