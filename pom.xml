@@ -70,16 +70,6 @@
 		</dependency>
 
 	</dependencies>
-<distributionManagement>
-
-
-     <snapshotRepository>
-         <id>deployment</id>
-         <name>siva snapshot </name>
-         <url>http://localhost:8081/repository/siva.aws171/</url>
-     </snapshotRepository>
-
-</distributionManagement>
 
 	
 	<build>
